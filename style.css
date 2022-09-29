@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.6rem;
+}
+
+.top-part{
+    background-color:black;
+    padding-bottom: 1rem;
+    padding-top: 0.4rem;
+}
+
+.bottom-part{
+    background-color:#222222;
+}
+
+.web-app-viewport{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.main-part{
+    flex-grow: 1;
+    padding: 0 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.top-btn{
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, .5);
+    font-size: 0.6rem;
+    padding: 0.2rem 0.2rem;
+    border: none;
+    margin-right: 0.4rem;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+}
+
+.top-btn:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.bottom-left-part{
+    margin-left: 0.4rem ;
+}
+
+.bottom-center-part{
+    margin-right: 0.4rem;
+}
+
+.menu-item-container{
+    border-radius: 5px;
+    font-size: 0.6rem;
+    padding: 0.1rem 1.6rem;
+    border: none;
+    color: white;
+}
+
+.menu-item-container:hover{
+    background-color: rgba(128, 128, 128, .5) ;
+}
+
+.menu-item-icon{
+    font-size: x-large;
+    margin-bottom: 0.2rem;
+}
+
+.menu-itme-option-btn{
+    top: 4%;
+    right: 4%;
+
+    border-radius: 5px;
+    font-size: 0.6rem;
+    line-height: normal;
+    padding: 0.3rem;
+    border: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;  
+}
+
+.menu-itme-option-btn:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.bottom-right-part{
+    font-size: 0.6rem;
+    padding: 0.1rem 2rem;
+    border: none;
+    color: red;
+}
+
+.bottom-right-part:hover{
+    background-color: rgba(128, 128, 128, .5) ;
+}
+
+.bottom-right-part{
+    height: 100%;
+}
+
+.share-screen-btn{
+    color: rgb(0, 203, 0);
+} 
+
+.users-container{
+    height: 100%;
+}
+
+.user-card{
+    padding: 0.4rem;
+    width: calc(100% / 7);
+    height: calc(100% / 5);
+    background-color: black;
+}
+
+.img-container{
+    width: 100%;
+    height: 100%;
+    background-image: url(img-wide.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.img-container-squared-test{
+    width: 100%;
+    height: 100%;
+    background-image: url(img-square.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.user-name{
+    bottom: 0.4rem;
+    color: white;
+    background-color: rgba(128, 128, 128, .6);
+}
+
+.user-name:hover{
+    background-color: rgba(128, 128, 128, .9);
+}
+
+
+/* 
+- dato grow al div centrale
+- messo un div al suo interno con height 100% cosi che fosse "fissa"
+- dimensionate le card w 100/7 e h 100/5
+- dimensionato container per le img 100 e 100 così da rispettare il padding del padre
+- usato bg size contain così che ogni formato di img rimanga dentro e cambi con il contenitore padre
+- la dimensione è completamente concatenata al div centrale, quando cambia lui a catena cambia il contenitore delle cards, le cards, i container delle img e infine le img
+
+- come si può rendere piu responsive l'etichetta del nome?
+- come mai se dall'inspector metto un dispositivo verticale i 100vh non funzionano?*/
